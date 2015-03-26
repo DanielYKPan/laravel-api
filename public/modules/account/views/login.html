@@ -1,0 +1,53 @@
+<div id="wrapper" class="user" data-ng-controller="LoginFormController">
+    <div class="row login-container">
+        <div class="col-sm-8 col-sm-offset-2 login-panel">
+            <div class="row login-panel-heading heading-fancy">
+                Sign in to My Easy Wine's
+            </div>
+            <form class="form-horizontal" name="loginForm" novalidate>
+                <p class="text-danger login-error"
+                   data-ng-show="loginErrors && loginForm.$pristine"
+                        data-ng-repeat="error in loginErrors">
+                    {{error}}
+                </p>
+                <div class="form-group"data-ng-class="{ 'has-error' : loginForm.email.$invalid && !loginForm.email.$pristine }">
+                    <label for="login-email" class="col-sm-3 control-label">Email</label>
+                    <div class="col-sm-8">
+                        <input type="email" name="email" class="form-control" id="login-email" placeholder="Email"
+                               data-ng-model="email" data-ng-model-options="{ updateOn: 'default blur', debounce: { default: 500, blur: 0 } }" required>
+                        <p data-ng-show="(loginForm.email.$error.required && !loginForm.email.$pristine) || (loginForm.email.$error.email && !loginForm.email.$pristine)"
+                             class="help-block">A valid email address is required.</p>
+                    </div>
+                </div>
+                <div class="form-group" data-ng-class="{ 'has-error' : loginForm.password.$invalid && !loginForm.password.$pristine }">
+                    <label for="login-password" class="col-sm-3 control-label">Password</label>
+                    <div class="col-sm-8">
+                        <input type="password" name="password" class="form-control" id="login-password" placeholder="Password" data-ng-model="password" required>
+                        <p data-ng-show="loginForm.password.$error.required && !loginForm.password.$pristine"
+                           class="help-block">Password id required.</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                        <button type="submit"
+                                class="btn btn-primary"
+                                data-ng-click="submit()"
+                                data-ng-disabled="loginForm.$invalid"
+                                >
+                            Sign in
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

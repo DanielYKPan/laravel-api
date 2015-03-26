@@ -1,0 +1,13 @@
+<nav>
+    <ul class="pagination" id="wineResultsPagination">
+        <li data-ng-class="{disabled: noPrevious()}">
+            <a href data-ng-click="prevPage()"><< Prev</a>
+        </li>
+        <li data-ng-repeat="n in range()" data-ng-class="{active: n == currentPage}" data-ng-click="selectPage(n)">
+            <a href="#">{{n}}</a>
+        </li>
+        <li data-ng-class="{disabled: noNext()}">
+            <a href data-ng-click="nextPage()">Next >></a>
+        </li>
+    </ul>
+</nav>

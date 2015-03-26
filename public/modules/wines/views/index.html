@@ -1,0 +1,76 @@
+<div id="wrapper" class="wine">
+    <div class="wines-content row" data-ng-controller="WineListController">
+        <div class="col-sm-4 col-md-4 search-container">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h5 class="panel-title"><strong>Price</strong></h5>
+                </div>
+                <div class="panel-body">
+                    <h6><strong>Select a price range</strong></h6>
+                    $<input type="text" name="min-price" placeholder="Min" class="price-range-input" data-ng-model="priceFrom" onkeydown="return isNumber(event);">
+                    to
+                    $<input type="text" name="maxPrice" placeholder="Max" class="price-range-input" data-ng-model="priceTo" onkeydown="return isNumber(event);">
+                    <input type="button" class="btn btn-primary" value="Go" data-ng-disabled="priceSearchBtnDisabled()" data-ng-click="priceSearchBtnClick()">
+                </div>
+            </div>
+            <filter-panel name="wine_type" checkbox-items="checkboxItems" panel-items="checkboxItems.types"
+                            search="search" result="result" panel="search.types" num-limit="Infinity"
+                            >
+            </filter-panel>
+            <filter-panel name="wine_variety" checkbox-items="checkboxItems" panel-items="checkboxItems.varieties"
+                            search="search" result="result" panel="search.varieties" num-limit="6"
+                            >
+            </filter-panel>
+        </div>
+        <div class="col-sm-8 col-md-8 search-container" id="wine-result-container">
+            <div id="pagingTopContainer" class="pagingContainer">
+                <div class="pagingTemplate">
+                    <div class="pagingTemplate_qty">
+                        <h4><span class="pagingTemplate_qtyAmount">{{result.total}}</span> Items</h4>
+                    </div>
+                    <div class="pagingTemplate_sort">
+                        Sort by
+                        <select class="pagingTemplate_sortSelectBox"
+                                data-ng-model="search.sort"
+                                data-ng-options="opt.label for opt in options"
+                                data-ng-change="sort()">
+                        </select>
+                    </div>
+                    <div class="pagingTemplate_view">
+                        View:
+                        <i class="fa fa-th  fa-2x" data-ng-class="{'result-view-selected': gridView}" data-ng-click="switchResultView(grid=true)"></i>
+                        <i class="fa fa-th-list  fa-2x" data-ng-class="{'result-view-selected': !gridView}" data-ng-click="switchResultView(grid=false)"></i>
+                    </div>
+                </div>
+                <div class="pagingSeparator borderLine">
+                </div>
+            </div>
+            <div class="spinner" id="spinner" style="display: none;">
+                <i class="fa fa-spinner fa-pulse fa-3x"></i>
+            </div>
+            <div id="wineResultsContainer" class="wineResultsContainer" data-ng-switch on="gridView">
+                <div class="list-view" data-ng-switch-when="false">
+                    <wine-result-list wine-result="result.wines" on-add-item="addItemHandler(item)" on-display-item="displayItemHandler(code)"></wine-result-list>
+                </div>
+                <div class="grid-view" data-ng-switch-default>
+                    <wine-result-grid wine-result="result.wines" on-add-item="addItemHandler(item)" on-display-item="displayItemHandler(code)"></wine-result-grid>
+                </div>
+            </div>
+            <my-pagination num-pages="search.numPages" current-page="search.currentPage" on-select-page="selectPageHandler(page)"></my-pagination>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function isNumber(event) {
+        if (event) {
+            var charCode = (event.which) ? event.which : event.keyCode;
+            if (charCode != 190 && charCode > 31 &&
+                    (charCode < 48 || charCode > 57) &&
+                    (charCode < 96 || charCode > 105) &&
+                    (charCode < 37 || charCode > 40) &&
+                    charCode != 110 && charCode != 8 && charCode != 46 )
+                return false;
+        }
+        return true;
+    }
+</script>

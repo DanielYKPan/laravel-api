@@ -1,0 +1,32 @@
+<div class="wine-inform-grid">
+    <div class="row">
+        <div class="col-sm-4" data-ng-repeat="wine in wineResult">
+            <div class="panel panel-default wine-grid-panel">
+                <div class="panel-body">
+                    <div class="wine-grid-module-head">
+                        <h5 class="clickable-element" data-ng-click="onDisplayItem({code: wine.code})">{{wine.name}}</h5>
+                    </div>
+                    <div class="wine-grid-module-desc row">
+                        <div class="col-sm-5">
+                            <img data-ng-src="uploads/images/wines/260/{{wine.image}}"
+                                 class="wine-grid-img img-responsive clickable-element" data-ng-click="onDisplayItem({code: wine.code})">
+                        </div>
+                        <div class="col-sm-7">
+                            <h5 class="discount-total-price">{{unitTotal(wine.discount_price, wine.case_size)| currency: 'AD$' : 2}}</h5>
+                        </div>
+                    </div>
+                    <div class="wine-grid-module-cart">
+                        <button type="button" class="btn btn-primary btn-lg col-sm-12"
+                                data-ng-click="addItem(wine)">
+                            <i class="fa fa-shopping-cart"></i>
+                            Add to cart
+                        </button>
+                        <div class="center-block">
+                            <small class="text-muted">(Set qty at checkout)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

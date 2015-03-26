@@ -1,0 +1,22 @@
+<div class="switch-panel" >
+    <div data-ng-show="isAuthenticated()">
+        <h5>
+            <a><strong>My Account</strong></a>
+            or
+            <a data-ng-click="logout()">
+                <strong>Logout</strong>
+            </a>
+        </h5>
+    </div>
+    <div data-ng-hide="isAuthenticated()">
+        <h5>
+            <a data-ng-click="loginFormOpen()">
+                <strong>Sign In</strong>
+            </a>
+            or
+            <a data-ng-click="register()">
+                <strong>Register</strong>
+            </a>
+        </h5>
+    </div>
+</div>

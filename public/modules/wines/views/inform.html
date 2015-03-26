@@ -1,0 +1,13 @@
+<div class="product-inform">
+    <section class="product-basic-inform col-md-6 col-sm-6">
+        <div class="product-usp">
+            <ul data-ng-repeat="usp in wine.wine_detail.unique_selling_points">
+                <li>{{usp}}</li>
+            </ul>
+        </div>
+        <img data-ng-src="uploads/images/wines/originals/{{wine.image}}" class="product-image" alt="{{wine.name}}">
+    </section>
+    <section class="product-detail-inform col-md-6 col-sm-6">
+        <h4 class="product-title">{{wine.name}}</h4>
+    </section>
+</div>

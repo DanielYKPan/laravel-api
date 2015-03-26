@@ -1,0 +1,30 @@
+<div class="wine-inform-panel">
+    <div class="wine-inform-list row" data-ng-repeat="wine in wineResult">
+        <div class="col-xs-2 col-sm-2 col-md-2 wine-list-module-left">
+            <img class="clickable-element" data-ng-src="uploads/images/wines/260/{{wine.image}}" data-ng-click="onDisplayItem({code: wine.code})">
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 wine-list-module-center">
+            <p class="wine-list-label clickable-element" data-ng-click="onDisplayItem({code: wine.code})">{{wine.name}}</p>
+            <ul class="wine-list-usp">
+                <li>{{wine.wine_detail.usp_1}}</li>
+                <li>{{wine.wine_detail.usp_2}}</li>
+                <li>{{wine.wine_detail.usp_3}}</li>
+            </ul>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 wine-list-module-right">
+            <div class="row wine-list-price">
+                <div class="col-sm-9 priceRight">
+                    <span class="row price-was">Was <del>{{wine.price}}</del></span>
+                    <span class="row price-now">Now {{wine.discount_price}}</span>
+                    <span class="row price-save">Save Price</span>
+                    <span class="row price-bottle">Price a bottle</span>
+                </div>
+            </div>
+            <div class="row add-to-cart">
+                <div class="row">
+                    <button class="btn btn-warning btn-responsive" data-ng-click="addItem(wine)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

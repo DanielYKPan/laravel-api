@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h5 class="panel-title"><strong>{{name | labelCase}}</strong></h5>
+    </div>
+    <div class="panel-body">
+        <h6>
+            <strong>Select {{name | labelCase}}</strong>
+            <span class="panel-search-item-clear-btn" data-ng-click="clear()" >...Clear</span>
+        </h6>
+    </div>
+    <ul class="list-group panel-body">
+        <li class="list-group-item animate-repeat" data-ng-repeat="item in panelItems | orderBy: 'amount':true | limitTo: toggleLimit">
+            <input type="checkbox" data-ng-model="item.selected" checkbox-items = 'checkboxItems'
+                   name="{{name}}" class="search-ckb" search="search" panel="panel"
+                   result="result" value="{{item.name}}" check-box>
+            {{item.name}}
+            <span class="badge">{{item.amount}}</span>
+        </li>
+        <li class="list-group-item" data-ng-if="panelItems.length > numLimit" data-ng-click="toggle()">{{toggleBtn}}</li>
+    </ul>
+</div>

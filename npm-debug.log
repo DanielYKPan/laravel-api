@@ -1,0 +1,159 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'karama-jasmine',
+1 verbose cli   'karma-chrome-launcher',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json @ No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'karama-jasmine', null ]
+7 verbose cache add name=undefined spec="karama-jasmine" args=["karama-jasmine",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'karama-jasmine',
+8 verbose parsed url   path: 'karama-jasmine',
+8 verbose parsed url   href: 'karama-jasmine' }
+9 verbose cache add [ 'karma-chrome-launcher', null ]
+10 verbose cache add name=undefined spec="karma-chrome-launcher" args=["karma-chrome-launcher",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'karma-chrome-launcher',
+11 verbose parsed url   path: 'karma-chrome-launcher',
+11 verbose parsed url   href: 'karma-chrome-launcher' }
+12 silly lockFile 61c3cde4-karama-jasmine karama-jasmine
+13 verbose lock karama-jasmine C:\Users\YaoKun\AppData\Roaming\npm-cache\61c3cde4-karama-jasmine.lock
+14 silly lockFile 4f6bc915-karma-chrome-launcher karma-chrome-launcher
+15 verbose lock karma-chrome-launcher C:\Users\YaoKun\AppData\Roaming\npm-cache\4f6bc915-karma-chrome-launcher.lock
+16 silly lockFile 61c3cde4-karama-jasmine karama-jasmine
+17 silly lockFile 61c3cde4-karama-jasmine karama-jasmine
+18 silly lockFile 4f6bc915-karma-chrome-launcher karma-chrome-launcher
+19 silly lockFile 4f6bc915-karma-chrome-launcher karma-chrome-launcher
+20 verbose addNamed [ 'karama-jasmine', '' ]
+21 verbose addNamed [ null, '*' ]
+22 silly lockFile f0c265a6-karama-jasmine karama-jasmine@
+23 verbose lock karama-jasmine@ C:\Users\YaoKun\AppData\Roaming\npm-cache\f0c265a6-karama-jasmine.lock
+24 verbose addNamed [ 'karma-chrome-launcher', '' ]
+25 verbose addNamed [ null, '*' ]
+26 silly lockFile cd66acf6-karma-chrome-launcher karma-chrome-launcher@
+27 verbose lock karma-chrome-launcher@ C:\Users\YaoKun\AppData\Roaming\npm-cache\cd66acf6-karma-chrome-launcher.lock
+28 silly addNameRange { name: 'karama-jasmine', range: '*', hasData: false }
+29 verbose request where is /karama-jasmine
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 1e0fd5f5053a3e47
+32 verbose url raw /karama-jasmine
+33 verbose url resolving [ 'https://registry.npmjs.org/', './karama-jasmine' ]
+34 verbose url resolved https://registry.npmjs.org/karama-jasmine
+35 verbose request where is https://registry.npmjs.org/karama-jasmine
+36 info trying registry request attempt 1 at 18:17:00
+37 http GET https://registry.npmjs.org/karama-jasmine
+38 silly addNameRange { name: 'karma-chrome-launcher', range: '*', hasData: false }
+39 verbose request where is /karma-chrome-launcher
+40 verbose request registry https://registry.npmjs.org/
+41 verbose url raw /karma-chrome-launcher
+42 verbose url resolving [ 'https://registry.npmjs.org/', './karma-chrome-launcher' ]
+43 verbose url resolved https://registry.npmjs.org/karma-chrome-launcher
+44 verbose request where is https://registry.npmjs.org/karma-chrome-launcher
+45 info trying registry request attempt 1 at 18:17:00
+46 verbose etag "DIZC823MUCSKGL614OCJRGKTS"
+47 http GET https://registry.npmjs.org/karma-chrome-launcher
+48 http 304 https://registry.npmjs.org/karma-chrome-launcher
+49 silly registry.get cb [ 304,
+49 silly registry.get   { date: 'Mon, 09 Mar 2015 07:17:00 GMT',
+49 silly registry.get     server: 'Apache',
+49 silly registry.get     via: '1.1 varnish',
+49 silly registry.get     'last-modified': 'Mon, 09 Mar 2015 07:17:00 GMT',
+49 silly registry.get     'cache-control': 'max-age=60',
+49 silly registry.get     etag: '"DIZC823MUCSKGL614OCJRGKTS"',
+49 silly registry.get     age: '16',
+49 silly registry.get     'x-served-by': 'cache-syd1620-SYD',
+49 silly registry.get     'x-cache': 'HIT',
+49 silly registry.get     'x-cache-hits': '1',
+49 silly registry.get     'x-timer': 'S1425885420.266558,VS0,VE0',
+49 silly registry.get     vary: 'Accept',
+49 silly registry.get     'content-length': '0',
+49 silly registry.get     'keep-alive': 'timeout=10, max=50',
+49 silly registry.get     connection: 'Keep-Alive' } ]
+50 verbose etag https://registry.npmjs.org/karma-chrome-launcher from cache
+51 silly addNameRange number 2 { name: 'karma-chrome-launcher', range: '*', hasData: true }
+52 silly addNameRange versions [ 'karma-chrome-launcher',
+52 silly addNameRange   [ '0.0.1',
+52 silly addNameRange     '0.0.2',
+52 silly addNameRange     '0.1.0',
+52 silly addNameRange     '0.1.1',
+52 silly addNameRange     '0.1.2',
+52 silly addNameRange     '0.1.3',
+52 silly addNameRange     '0.1.4',
+52 silly addNameRange     '0.1.5',
+52 silly addNameRange     '0.1.6',
+52 silly addNameRange     '0.1.7' ] ]
+53 verbose addNamed [ 'karma-chrome-launcher', '0.1.7' ]
+54 verbose addNamed [ '0.1.7', '0.1.7' ]
+55 silly lockFile ced0a4a4-karma-chrome-launcher-0-1-7 karma-chrome-launcher@0.1.7
+56 verbose lock karma-chrome-launcher@0.1.7 C:\Users\YaoKun\AppData\Roaming\npm-cache\ced0a4a4-karma-chrome-launcher-0-1-7.lock
+57 silly lockFile ced0a4a4-karma-chrome-launcher-0-1-7 karma-chrome-launcher@0.1.7
+58 silly lockFile ced0a4a4-karma-chrome-launcher-0-1-7 karma-chrome-launcher@0.1.7
+59 silly lockFile cd66acf6-karma-chrome-launcher karma-chrome-launcher@
+60 silly lockFile cd66acf6-karma-chrome-launcher karma-chrome-launcher@
+61 http 404 https://registry.npmjs.org/karama-jasmine
+62 verbose headers { date: 'Mon, 09 Mar 2015 07:17:00 GMT',
+62 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+62 verbose headers   'content-type': 'application/json',
+62 verbose headers   'cache-control': 'max-age=0',
+62 verbose headers   'content-length': '52',
+62 verbose headers   'accept-ranges': 'bytes',
+62 verbose headers   via: '1.1 varnish',
+62 verbose headers   age: '0',
+62 verbose headers   'x-served-by': 'cache-syd1623-SYD',
+62 verbose headers   'x-cache': 'MISS',
+62 verbose headers   'x-cache-hits': '0',
+62 verbose headers   'x-timer': 'S1425885420.269577,VS0,VE197',
+62 verbose headers   'keep-alive': 'timeout=10, max=50',
+62 verbose headers   connection: 'Keep-Alive' }
+63 silly registry.get cb [ 404,
+63 silly registry.get   { date: 'Mon, 09 Mar 2015 07:17:00 GMT',
+63 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+63 silly registry.get     'content-type': 'application/json',
+63 silly registry.get     'cache-control': 'max-age=0',
+63 silly registry.get     'content-length': '52',
+63 silly registry.get     'accept-ranges': 'bytes',
+63 silly registry.get     via: '1.1 varnish',
+63 silly registry.get     age: '0',
+63 silly registry.get     'x-served-by': 'cache-syd1623-SYD',
+63 silly registry.get     'x-cache': 'MISS',
+63 silly registry.get     'x-cache-hits': '0',
+63 silly registry.get     'x-timer': 'S1425885420.269577,VS0,VE197',
+63 silly registry.get     'keep-alive': 'timeout=10, max=50',
+63 silly registry.get     connection: 'Keep-Alive' } ]
+64 silly lockFile f0c265a6-karama-jasmine karama-jasmine@
+65 silly lockFile f0c265a6-karama-jasmine karama-jasmine@
+66 error 404 404 Not Found: karama-jasmine
+66 error 404
+66 error 404 'karama-jasmine' is not in the npm registry.
+66 error 404 You should bug the author to publish it
+66 error 404
+66 error 404 Note that you can also install from a
+66 error 404 tarball, folder, or http url, or git url.
+67 error System Windows_NT 6.2.9200
+68 error command "c:\\Program Files (x86)\\nodejs\\node.exe" "c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "karama-jasmine" "karma-chrome-launcher" "--save-dev"
+69 error cwd c:\Users\YaoKun\Development\projects\personal\laravel-api-app
+70 error node -v v0.10.33
+71 error npm -v 1.4.28
+72 error code E404
+73 verbose exit [ 1, true ]

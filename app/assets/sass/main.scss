@@ -1,0 +1,516 @@
+h1, .h1 {
+  font-size: 5em !important;
+}
+
+h2, .h2 {
+  font-size: 4em !important;
+}
+
+h3, .h3 {
+  font-size: 3em !important;
+}
+
+h4, .h4 {
+  font-size: 2em !important;
+}
+
+h5, .h5 {
+  font-size: 1.5em !important;
+}
+
+h6, .h6 {
+  font-size: 1em !important;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.clickable-element {
+  cursor: pointer;
+}
+
+/***************************
+#
+#    Header Styling Part
+#
+//***************************/
+  .header:before {
+    background: #000;
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.6em;
+    left: 0;
+    right: 0;
+  }
+
+  .header-content-right a {
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .header-content-right div {
+    display: inline-block;
+  }
+
+  .header-cart {
+    color: #ffffff;
+    position: relative;
+  }
+
+  .header-cart .cart-logo {
+    margin-top: 0.2em;
+  }
+
+  #mast-head > .inner-center {
+    height: 7.2em;
+    padding-top: 0;
+  }
+
+  .logo {
+    background: url('../imgs/theme/CellarmasterLogo.png');
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 22em;
+    height: 4em;
+    float: left;
+    margin-top: 2.2em;
+    margin-bottom: 0.7em;
+  }
+
+.account-header-panel a {
+  color: #88d0cc;
+  font-weight: 800;
+  padding: 10px;
+  width: auto;
+  position: relative;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.account-header-panel a:hover{
+  text-decoration: none;
+  color: #5F928F;
+}
+
+/***************************
+#
+#     Navbar Styling Part
+#
+//***************************/
+
+
+  .home-navbar {
+    margin-bottom: 1em;
+    border: none;
+    min-height: 2em;
+  }
+
+  .home-navbar .home-navbar-nav > li > a {
+    font-weight: 700;
+    color: #000;
+    font-size: 1.2em;
+    text-transform: capitalize;
+  }
+
+  .home-navbar .home-navbar-nav > li > a:hover {
+    color: #89B3FD;
+  }
+
+  .home-navbar-nav > li {
+    margin-left: 1em;
+    padding-bottom: 0;
+  }
+
+  .dropdown-menu > li > ul {
+    padding: 0;
+    margin: 0;
+  }
+  .dropdown-menu > li > ul > li {
+    list-style: none;
+  }
+  .dropdown-menu > li > ul > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #999;
+    white-space: normal;
+  }
+  .dropdown-menu > li ul > li > a:hover, .dropdown-menu > li ul > li > a:focus {
+    color: #444;
+    background-color: #f5f5f5;
+  }
+
+  .dropdown-menu .dropdown-header {
+    color: #428bca;
+    font-size: 1.2em;
+    font-weight:bold;
+  }
+  .dropdown-menu form {
+    margin:3px 20px;
+  }
+
+  .dropdown-menu .form-group {
+    margin-bottom: 3px;
+  }
+
+  .deal-of-the-day .label {
+    color: #FF1717;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+
+  .deal-of-the-day .wine-label {
+    margin: 1em 0;
+    color: black;
+    font-size: 1.3em;
+  }
+
+  .deal-of-the-day .wine-was-price {
+    font-size: 1.2em;
+    color: #999;
+  }
+
+  .deal-of-the-day .wine-now-price {
+    font-size: 1.4em;
+    color: #000;
+    font-weight: 700;
+  }
+
+  .deal-of-the-day .wine-save-amount {
+    font-size: 1.4em;
+    color: #FF1717;
+    font-weight: 700;
+  }
+
+  .yamm .nav,
+  .yamm .collapse,
+  .yamm .dropup,
+  .yamm .dropdown {
+    position: static;
+  }
+  .yamm .container {
+    position: relative;
+  }
+  .yamm .dropdown-menu {
+    left: auto;
+  }
+  .yamm .yamm-content {
+    padding: 20px 30px;
+  }
+  .yamm .dropdown.yamm-fw .dropdown-menu {
+    left: 0;
+    right: 0;
+  }
+/************************** Navbar Styling End *************************/
+
+/***************************
+#
+#    Search-Wine Page Styling Part
+#
+//***************************/
+
+  .cart-table .cart-wine-img {
+    padding: 0.5em 1em;
+    height: 8em;
+  }
+
+  .cart-table .item_qty input[type="number"] {
+    width: 3em;
+    text-align: right;
+    font-weight: 100;
+    color: #000;
+    padding: 0 5px;
+    height: 2.5em;
+    border-radius: 5px;
+    border: 1px solid #99988c;
+    box-sizing: border-box;
+    box-shadow: inset 3px 3px 3px #f0f0f0;
+  }
+
+/************************** Navbar Styling End *************************/
+
+
+/***************************
+#
+#    Login Page Styling Part
+#
+//***************************/
+
+.login-panel-heading {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.heading-fancy {
+  font-weight: normal;
+  text-align: center;
+  line-height: 170%;
+  color: #000;
+  margin-top: 1em;
+}
+
+.login-error {
+  text-align: center;
+}
+
+/************************** Login Styling End *************************/
+
+
+/***************************
+#
+#    Registration Form Styling Part
+#
+//***************************/
+
+.account .registrationForm-heading {
+  font-size: 4em;
+  font-weight: 600;
+  color: #bcbdc0;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.account .registrationForm .panel {
+  border: 0;
+}
+
+.account .registrationForm-panel-heading{
+  font-size: 2em;
+  font-weight: 500;
+  background: #fff;
+  color: #000;
+  position: relative;
+  padding: .5em 0;
+  border-top: 1px solid #8f969b;
+}
+
+.account .registrationForm-panel-heading .heading-number {
+  color: #fff;
+  display: inline-block;
+  background: #88d0cc;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  text-align: center;
+  padding: .1em;
+  line-height: 1em;
+  margin-right: .25em;
+  text-decoration: none;
+  pointer-events:none;
+  cursor: default;
+}
+
+/************************** Registration Form Styling End *************************/
+
+/***************************
+#
+#    Search-Wine Page Styling Part
+#
+//***************************/
+
+.wine .price-range-input {
+  border-color: #CAC6B3;
+  border-radius: 5px;
+  height: 2em;
+  width: 20%;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+.search-container{
+  margin-top: 1em;
+}
+
+.pagingTemplate div{
+  display: inline-block;
+}
+
+.pagingTemplate .pagingTemplate_qty {
+  width: auto;
+  margin-right: 1em;
+  color: #000;
+  font-weight: bold;
+}
+
+.pagingTemplate .pagingTemplate_qty .pagingTemplate_qtyAmount {
+  font-size: 1.8em;
+}
+
+.pagingTemplate .pagingTemplate_sort {
+  color: #999;
+  margin-right: 1em;
+}
+
+.pagingTemplate .pagingTemplate_sort div {
+  color: #000;
+  font-weight: 500;
+}
+
+.pagingTemplate_sortSelectBox{
+  height: 2.5em;
+  line-height: 1.2;
+  width: 10em;
+  color: #555;
+  vertical-align: bottom;
+}
+
+.pagingTemplate_view {
+  padding-top: 0.5em;
+}
+
+.pagingSeparator {
+  margin-top: 0.2em;
+}
+
+.borderLine:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #555;
+}
+
+.wineResultsContainer {
+  margin-top: 1em;
+}
+
+.pagingContainer .result-view-selected {
+  color : grey;
+}
+
+.wineResultsContainer .wine-inform-list{
+  height: auto;
+  position: relative;
+  vertical-align: top;
+  border-bottom: 1px solid #555;
+  padding: 0.8em 0;
+  margin: 0;
+}
+
+.wineResultsContainer .wine-inform-list .wine-list-label {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #000;
+  display: block;
+  line-height: 1.3em;
+}
+
+.wineResultsContainer .wine-inform-list .wine-list-usp {
+  padding-left: 1.2em;
+  font-size: 1.2em;
+}
+
+.wineResultsContainer .wine-inform-grid .panel {
+  min-height: 30em;
+}
+
+.wineResultsContainer .wine-inform-grid .wine-grid-module-head {
+  min-height: 7em;
+}
+
+.wineResultsContainer .wine-inform-grid .wine-grid-module-desc {
+  height: 15em;
+}
+
+.wineResultsContainer .wine-inform-grid .wine-grid-img {
+  height: 14em;
+  margin-left: 1em;
+}
+
+#spinner {
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -4em;
+  margin-left: -4em;
+}
+
+/************************** Search-Wine Page Styling End *************************/
+
+
+/***************************
+#
+#    Specific-Wine Page Styling Part
+#
+//***************************/
+
+.product-basic-inform .product-image {
+  position: relative;
+  margin-left: 7em;
+  width: 30%;
+  height: auto;
+  z-index: -1;
+}
+
+.product-usp {
+  width: 14em;
+  line-height: 1.6em;
+  vertical-align: top;
+  position: absolute;
+  left: 16em;
+  margin: 0;
+  padding-top: 1em;
+  background-color: black;
+  color: #fff;
+  padding: .5em .5em .5em 0;
+  font-size: 1.3em;
+  box-shadow: -4px 4px 12px 2px rgba(120,116,120,1);
+}
+
+.product-usp:before {
+  width: 0;
+  height: 0;
+  border-top: 0.6em solid transparent;
+  border-right: 0.6em solid black;
+  border-bottom: 0.6em solid transparent;
+  position: absolute;
+  top: 20px;
+  left: -0.6em;
+  content: "";
+}
+
+h4.product-title {
+  line-height: 1.1em;
+  font-weight: 900;
+  color: #000;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+/************************** Specific-Wine Page Styling End *************************/
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity:0;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity:1;
+}
